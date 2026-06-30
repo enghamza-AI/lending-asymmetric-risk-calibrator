@@ -1,0 +1,71 @@
+# ================================================================
+# BUSINESS RULES CONFIGURATION
+# Lending Asymmetric Risk Calibrator
+# ================================================================
+cost_matrix:
+
+  loss_given_default: 15000
+
+  revenue_per_good_loan: 1200
+
+  opportunity_cost_per_rejection: 300
+
+
+
+
+constraints:
+
+
+  min_approval_rate: 0.60
+
+ 
+  max_fairness_gap: 0.05
+
+
+  min_recall: 0.60
+
+
+
+
+optimization:
+
+
+  fairness_attribute: "home_ownership"
+
+
+  pareto_resolution: 0.01
+
+  
+  scipy_method: "SLSQP"
+
+
+
+
+data:
+
+  
+  raw_path: "data/accepted_2007_to_2018Q4.csv"
+
+  
+  sample_size: 300000
+
+ 
+  random_state: 42
+
+ 
+  test_size: 0.20
+
+
+
+
+sensitivity:
+
+  
+  perturbation: 0.10
+
+  
+  parameters_to_test:
+    - loss_given_default
+    - revenue_per_good_loan
+    - min_approval_rate
+    - max_fairness_gap

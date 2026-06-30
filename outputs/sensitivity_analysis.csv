@@ -1,0 +1,9 @@
+parameter,direction,new_threshold,baseline_threshold,threshold_change,profit_change
+loss_given_default,+10%,0.5,0.5,0.0,0
+loss_given_default,-10%,0.5,0.5,0.0,0
+revenue_per_good_loan,+10%,0.5,0.5,0.0,0
+revenue_per_good_loan,-10%,0.5,0.5,0.0,0
+min_approval_rate,+10%,0.5,0.5,0.0,0
+min_approval_rate,-10%,0.5,0.5,0.0,0
+max_fairness_gap,+10%,0.5,0.5,0.0,0
+max_fairness_gap,-10%,0.5,0.5,0.0,0
